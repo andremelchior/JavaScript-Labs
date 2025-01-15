@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introdução ao DOM</title>
+    </head>
+    <body>
+
+        <!-- O DOM é a manipulação dos elementos do HTML(Tags) criando eventos com funções -->
+
+        <div id="app">
+
+            <button onclick="mostraAlerta()">Me pressione</button>
+
+            <!-- OnClick é utilizando para chamar uma função com um evento quando clicar no botão -->
+            <!-- Pode-se utilizar varios outro atributos diferentes deste, como o onmouseover="mostraAlerta()"
+            que chama a função quando você apenas coloca o cursor em cima do botão -->
+            
+            <form action="">
+                <input onkeypress="senha()" type="password" placeholder="Digite sua senha">
+            </form>
+        </div>
+
+        <script>
+            function mostraAlerta(){
+                window.alert("Botão foi pressionado")
+            }
+
+            function senha(){
+                window.alert("Bem-vindo");
+            }
+        </script>
+    
+    </body>
+</html>
