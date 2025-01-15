@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX 06</title>
+    <style>
+        div.area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="area">clique em mim</div>
+
+    <script>
+        var a = window.document.getElementsByClassName('area')[0]
+
+        /*
+        Invés de usar dentro da div:
+
+        class="area" onclick="clicar()" onmouseenter="enter()" onmouseout="sair()"
+
+        use:
+        */
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+            a.style.transition = '0.7s'
+        }
+
+        function enter(){
+            a.innerText = 'entrou!'
+            a.style.background = 'blue'
+            a.style.transition = '0.7s'
+        }
+
+        function sair(){
+            a.innerText = 'saiu!'
+            a.style.background = 'green'
+            a.style.transition = '0.7s'
+        }
+    </script>
+</body>
+</html>
