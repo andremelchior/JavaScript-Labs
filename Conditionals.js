@@ -3,6 +3,13 @@
 // M ou F
 // Masculino ou Feminino
 
+//Syntax:
+// if (condition) {
+//     //codes...
+// } else {
+//     //codes...
+// }
+
 function retornaSexo(sexo) {
     if (sexo === "M") {
         return "Masculino";
