@@ -1,50 +1,63 @@
 // Variaveis e constantes
 
 
-// Inteiro - Int - Interger
+// Variaveis com escopo global (var):
+
+//1. Tipo Inteiro / Int / Interger
 var idade = 16;
 
-// Real - Float - Double
+//2. Tipo Real / Float / Double
 var peso = 48.25;
 
-// Booleano - Lógico - Bolean
+//3. Tipo Booleano / Lógico / Boolean
+var humano = false;
 var humano = true;
 
+// neste caso é possivel redeclarar a variavel "humano" atribuindo valores diferente
+console.log(humano); //true
 
-// Cadeia - Literal - String
+//4. Tipo Cadeia / Literal / String
 
-//independente do dado que receba, se estiver entre aspas será entendido como uma string.
 var texto = "text";
 var num1 = "10";
 var num2 = "50.34";
+//independente do dado que receba, se estiver entre aspas duplas ou simples será entendido como uma string.
 
+//5. Tipo indefinido / undefined
+var indefinido; //sem atribuição
+console.log(indefinido); // undefined
 
-// Vetor - Array
-var vet = ["andre", "marcos", "junior"]; 
+//6. Tipo Vazio / Null
+const vazio = null;
 
-// Atributos de um objeto (Orientação a Objetos)
+//7. Tipo Vetor / Array
+var vet = ["andre", "marcos", "junior"];
+console.log(alunos[0]); // Vetor na posição 0 (primeira posição) irá exibir "andre".
+
+//8. Tipo Objeto / Object / Orientação a Objetos / OOP
 var alunos = {
     nome: "andre",
     idade: "16",
     peso: "48.25",
     humano: true,
 };
-
-var nome = "andre";
-var nome = 10;
-var nome = 4.34;
-
-console.log(alunos[0]); // Vetor na posição 0
-console.log(alunos.nome); // Instanciamento
+console.log(alunos.nome); // Instanciamento, acessa o nome dentro do objeto alunos e exibe "andre".
 
 
-//constantes
+// Variaveis com escopo local (let):
+let nome1 = "andre";
+let idade1 = 10;
+let peso1 = 50.34;
+// neste caso NÃO é possivel redeclarar essas variaveis como com o "var", senão daria erro.
 
-//tem a mesma finalidade da variavel, porém seu valor não pode mudar no meio do código, por isso se chama constante. 
+
+//Constantes:
+
+//tem a mesma finalidade da variavel, porém seu valor não pode mudar no meio do código, por isso se chama constante.
 
 const texto2 = "text";
-const numero1 = 10;
-const numero2 = 50.34;
+const inteiro = 10;
+const decimal = 50.34;
 
 const vetor = ["julia", "sara", "bianca"];
 
