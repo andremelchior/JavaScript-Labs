@@ -21,6 +21,6 @@ var endereco = {
     uf: "SP",
 }; //Objeto
 
-//Os objeto estão melhor documentados em "./Variaveis/Variaveis.js".
+//Os objetos estão melhor documentados em "./Variaveis/Variaveis.js" no repositorio.
 
 retorno();
