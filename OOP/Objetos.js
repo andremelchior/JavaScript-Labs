@@ -19,6 +19,8 @@ var endereco = {
     bairro: "Centro",
     cidade: "São Caetano",
     uf: "SP",
-};
+}; //Objeto
+
+//Os objeto estão melhor documentados em "./Variaveis/Variaveis.js".
 
 retorno();
