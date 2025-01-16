@@ -1,0 +1,23 @@
+//COMPARA IGUALDADE
+a == b;
+
+//COMPARA IGUALDADE E TIPO DE DADO
+a === b;
+
+//COMPARA DIFERENÇA (se é diferente)
+a != b;
+
+//COMPARA DIFERENÇA E TIPO DE DADO
+a !== b;
+
+//COMPARA SE É MAIOR
+a > b;
+
+//COMPARA SE É MENOR
+a < b;
+
+//COMPARA SE É MAIOR OU IGUAL
+a >= b;
+
+//COMPARA SE É MENOR OU IGUAL
+a <= b;
