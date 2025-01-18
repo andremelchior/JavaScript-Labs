@@ -14,7 +14,7 @@ function retorno() {
 }
 
 var endereco = {
-    rua: '"Rua dos pinheiros"',
+    rua: "Rua dos pinheiros",
     numero: "1293",
     bairro: "Centro",
     cidade: "São Caetano",
